@@ -1,0 +1,6 @@
+#!/bin/bash
+# Take a screenshot when something went wrong to know exactly what the browser rendered when the process failed
+[ $# -eq 0 ] && echo "Usage: $0 output_filename.png" && exit 1
+
+outname="$1"
+xwd -root -silent | convert xwd:- png:$outname
