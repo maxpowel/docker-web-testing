@@ -80,6 +80,11 @@ screenshot
 It basically takes a screenshot of the whole display by using `xwd` command. It is useful when you detect an error to take
 a screenshot so you can debug better by knowing exactly what the browser rendered.
 
+record
+----------
+
+A command to records the screen. It allows a better debug than screenshot
+
 x11vnc
 ------
 

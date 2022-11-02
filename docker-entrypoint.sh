@@ -2,7 +2,7 @@
 set -e
 
 #Xvfb $DISPLAY -screen 0 800x600x16 &
-Xvfb $DISPLAY &
+Xvfb $DISPLAY -screen 0 1280x1280x16 &
 
 if [ "$CHROME" = true ] ; then
     echo "Running chromedriver"
